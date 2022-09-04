@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//en"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!--Creación de la tabla Profesores-->
+    <class name="pac.Profesor" table="profesores" catalog="m06">
+        <id column="idProfesor" name="id" type="long">
+            <generator class="increment"/>
+        </id>
+        <!--Atributos de la tabla-->
+        <property name="nombre" type="java.lang.String"/>
+        <property name="sexo" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>
+

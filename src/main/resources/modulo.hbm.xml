@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//en"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!--Creación de la tabla Modulos-->
+    <class name="pac.Modulo" table="modulos" catalog="m06">
+        <id name="id" type="long" column="idModulo">
+            <generator class="increment"/> <!--Generamos automaticamente la id Modulo-->
+        </id>
+        <!--Atributos de la tabla-->
+        <property name="nombre" type="java.lang.String"/>
+        <property name="codigo" type="java.lang.String"/>
+
+    </class>
+</hibernate-mapping>
